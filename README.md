@@ -16,12 +16,12 @@ HCP Terraform ──JWT──▶ Vault ──dynamic SP──▶ Azure
 ## Repository Structure
 
 ```
-├── vault-setup/        # Vault and HCP Terraform configuration
+├── vault-terraform-setup/        # Vault and HCP Terraform configuration
 ├── hub/                # Hub network workspace
 └── spoke/              # Spoke network workspace
 ```
 
-### vault-setup
+### vault-terraform-setup
 
 Configures the trust relationship between HCP Terraform and Vault, and sets up the Azure secrets engine. This includes:
 
