@@ -62,7 +62,7 @@ The `tfc-application` service principal requires the following permissions:
 ### 2. Deploy vault-setup
 
 ```bash
-cd vault-setup
+cd vault-terraform-setup
 terraform init
 terraform apply
 ```
