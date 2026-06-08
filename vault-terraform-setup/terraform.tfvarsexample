@@ -1,0 +1,7 @@
+subscription_id   = "XXX"
+tenant_id         = "XXX"
+client_id         = "XXX"
+app_client_id     = "XXX"
+client_secret     = "XXX"
+oauth_token       = "ghp_XXX"
+app_client_secret = "XXX"
