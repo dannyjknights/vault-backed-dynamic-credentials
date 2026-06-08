@@ -21,7 +21,7 @@ terraform {
 provider "azurerm" {
   use_cli = false
   # use_oidc = false
-  tenant_id       = "b8374b2e-678f-4daa-980b-b8173d05d1aa"
-  subscription_id = "0b90a85b-2a48-4332-b873-91fc2aecbaf1"
+  tenant_id       = var.tenant_id
+  subscription_id = var.subscription_id
   features {}
 }
