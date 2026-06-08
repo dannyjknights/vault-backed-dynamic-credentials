@@ -19,6 +19,7 @@ HCP Terraform ──JWT──▶ Vault ──dynamic SP──▶ Azure
 ├── vault-terraform-setup/        # Vault and HCP Terraform configuration
 ├── hub/                # Hub network workspace
 └── spoke/              # Spoke network workspace
+└── azure-sentinel-policies/      # HashiCorp Sentinel Policies
 ```
 
 ### vault-terraform-setup
@@ -38,6 +39,14 @@ Deploys a basic hub virtual network in Azure. Outputs are published via `tfe_out
 ### spoke
 
 Deploys a spoke virtual network and peers it to the hub. Consumes hub outputs using the `tfe_outputs` data source.
+
+### azure-sentinel-policies
+
+Three basic Sentinel policies are created to: 
+
+- Require all resources come from a Private Module Registry
+- Restrict the dates that applies can be made
+- Restrict inbound source IP addresses
 
 ## Prerequisites
 
