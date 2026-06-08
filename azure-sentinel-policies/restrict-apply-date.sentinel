@@ -1,0 +1,13 @@
+# This policy uses the time import to require that all terraform applies
+# are between a certain time period
+
+import "time"
+
+ start_date = "2026-01-01T08:00:00Z"
+ end_date = "2026-03-01T09:00:00Z"
+
+valid_time = rule { time.now.after(start_date) and time.now.before(end_date) }
+
+print("Current time:\n\t", (time.now).rfc3339, "\nDeployment must be between:\n\t", start_date, "and", end_date)
+
+main = rule { valid_time }
