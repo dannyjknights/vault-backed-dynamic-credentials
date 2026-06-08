@@ -17,8 +17,8 @@ HCP Terraform ──JWT──▶ Vault ──dynamic SP──▶ Azure
 
 ```
 ├── vault-terraform-setup/        # Vault and HCP Terraform configuration
-├── hub/                # Hub network workspace
-└── spoke/              # Spoke network workspace
+├── hub/                          # Hub network workspace
+└── spoke/                        # Spoke network workspace
 └── azure-sentinel-policies/      # HashiCorp Sentinel Policies
 ```
 
